@@ -1,0 +1,146 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "first_name": "Stanly",
+            "last_name": "Woodland",
+            "email": "swoodland0@vistaprint.com",
+            "gender": "Male",
+            "paid": true
+        },
+        {
+            "id": 2,
+            "first_name": "Vern",
+            "last_name": "Tarver",
+            "email": "vtarver1@icq.com",
+            "gender": "Male",
+            "paid": true
+        },
+        {
+            "id": 3,
+            "first_name": "Percival",
+            "last_name": "Grzegorek",
+            "email": "pgrzegorek2@chron.com",
+            "gender": "Male",
+            "paid": true
+        },
+        {
+            "id": 4,
+            "first_name": "Janifer",
+            "last_name": "Corpes",
+            "email": "jcorpes3@123-reg.co.uk",
+            "gender": "Female",
+            "paid": true
+        },
+        {
+            "id": 5,
+            "first_name": "Con",
+            "last_name": "Saipy",
+            "email": "csaipy4@usda.gov",
+            "gender": "Female",
+            "paid": false
+        },
+        {
+            "id": 6,
+            "first_name": "Troy",
+            "last_name": "Lago",
+            "email": "tlago5@gnu.org",
+            "gender": "Male",
+            "paid": true
+        },
+        {
+            "id": 7,
+            "first_name": "Bealle",
+            "last_name": "Carletti",
+            "email": "bcarletti6@washingtonpost.com",
+            "gender": "Male",
+            "paid": true
+        },
+        {
+            "id": 8,
+            "first_name": "Sheppard",
+            "last_name": "Simenet",
+            "email": "ssimenet7@photobucket.com",
+            "gender": "Male",
+            "paid": true
+        },
+        {
+            "id": 9,
+            "first_name": "Hobey",
+            "last_name": "Banner",
+            "email": "hbanner8@typepad.com",
+            "gender": "Male",
+            "paid": false
+        },
+        {
+            "id": 10,
+            "first_name": "Rolfe",
+            "last_name": "Yellowley",
+            "email": "ryellowley9@goo.ne.jp",
+            "gender": "Male",
+            "paid": false
+        }
+    ],
+    "events": [
+        {
+            "id": 1,
+            "business_name": "Skiptube",
+            "address": "2 Center Drive",
+            "event_date": "7/27/2020"
+        },
+        {
+            "id": 2,
+            "business_name": "Tagfeed",
+            "address": "4881 Steensland Park",
+            "event_date": "8/12/2020"
+        },
+        {
+            "id": 3,
+            "business_name": "Topicshots",
+            "address": "9 Blackbird Trail",
+            "event_date": "7/23/2020"
+        },
+        {
+            "id": 4,
+            "business_name": "Roombo",
+            "address": "3 School Street",
+            "event_date": "8/10/2020"
+        },
+        {
+            "id": 5,
+            "business_name": "Skipstorm",
+            "address": "04455 Sundown Point",
+            "event_date": "8/14/2020"
+        },
+        {
+            "id": 6,
+            "business_name": "Viva",
+            "address": "59864 Pawling Center",
+            "event_date": "8/12/2020"
+        },
+        {
+            "id": 7,
+            "business_name": "Ailane",
+            "address": "8 Arapahoe Junction",
+            "event_date": "8/4/2020"
+        },
+        {
+            "id": 8,
+            "business_name": "Trilia",
+            "address": "36425 Hoffman Pass",
+            "event_date": "8/14/2020"
+        },
+        {
+            "id": 9,
+            "business_name": "Blogspan",
+            "address": "2 Almo Plaza",
+            "event_date": "8/9/2020"
+        },
+        {
+            "id": 10,
+            "business_name": "Photolist",
+            "address": "822 Barby Hill",
+            "event_date": "7/29/2020"
+        }
+    ]
+}
