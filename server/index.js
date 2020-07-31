@@ -17,9 +17,9 @@ app.put(api.users + ":id", ctrl.users.put)
 app.delete(api.users + ":id", ctrl.users.delete)
 
 //events endpoints
-app.get(api.events, ctrl.users.get)
-app.post(api.events, ctrl.users.post)
-app.put(api.events + ":id", ctrl.users.put)
-app.delete(api.events + ":id", ctrl.users.delete)
+app.get(api.events, ctrl.events.get)
+app.post(api.events, ctrl.events.post)
+app.put(api.events + ":id", ctrl.events.put)
+app.delete(api.events + ":id", ctrl.events.delete)
 
 app.listen(port, () => console.log(`Server running on ${port}`))
