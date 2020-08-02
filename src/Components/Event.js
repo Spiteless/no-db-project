@@ -2,15 +2,16 @@ import React from 'react';
 import EventObject from './EventObject.js';
 
 function Event (props){
-    const eventsMap = props.events.map( E => {
+    const eventsMap = props.events.map( (E, eventIndex) => {
         return (
             <div className="event-box">
                 <EventObject
                     activeEvent = {E}
+                    eventIndex = {eventIndex}
                     users={props.users}
-                >
-    
-                </EventObject>
+                    deleteEvent = {props.deleteEvent}
+                    editEvent = {props.editEvent}
+                />
             </div>
         )
     })

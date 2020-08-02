@@ -18,9 +18,11 @@ class App extends React.Component {
         events: '/api/events/'
       },
       events: [],
-      users: []
+      users: [],
+      edit: false
     }
   }
+  
 
   componentDidMount() {
     this.initializeData()
@@ -84,11 +86,17 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Nav></Nav>
+        <Nav/>
         <Event
           users={this.state.users}
           events={this.state.events}
-        ></Event>
+          deleteEvent = {this.deleteEvent}
+          editEvent = {this.editEvent}
+          addEvent = {this.editEvent}
+          deleteUser = {this.deleteUser}
+          editUser = {this.editUser}
+          addUser = {this.addUser}
+        />
       </div>
     );
   }

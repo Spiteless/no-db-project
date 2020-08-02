@@ -171,7 +171,7 @@
             "event_date": "7/29/2020",
             "appointment_slots": [
                 20,
-                "null",
+                "available",
                 14,
                 12
             ]
@@ -182,7 +182,7 @@
             "address": "57589 Sycamore Crossing",
             "event_date": "8/5/2020",
             "appointment_slots": [
-                "null",
+                "available",
                 21,
                 9,
                 7
@@ -196,7 +196,7 @@
             "appointment_slots": [
                 29,
                 1,
-                "null",
+                "available",
                 10
             ]
         },
@@ -221,7 +221,7 @@
                 9,
                 21,
                 3,
-                "null"
+                "available"
             ]
         },
         {
@@ -231,8 +231,8 @@
             "event_date": "7/31/2020",
             "appointment_slots": [
                 26,
-                "null",
-                "null",
+                "available",
+                "available",
                 15
             ]
         },
@@ -242,8 +242,8 @@
             "address": "86092 Miller Parkway",
             "event_date": "8/4/2020",
             "appointment_slots": [
-                "null",
-                "null",
+                "available",
+                "available",
                 5,
                 29
             ]
@@ -254,10 +254,10 @@
             "address": "62798 Judy Parkway",
             "event_date": "7/30/2020",
             "appointment_slots": [
-                "null",
+                "available",
                 24,
-                "null",
-                "null"
+                "available",
+                "available"
             ]
         },
         {
@@ -267,7 +267,7 @@
             "event_date": "8/1/2020",
             "appointment_slots": [
                 8,
-                "null",
+                "available",
                 23,
                 20
             ]
@@ -282,7 +282,7 @@
             "appointment_slots": [
                 {
                     "client_id": 2,
-                    "time": "10:0 am"
+                    "time": "10:00 am"
                 },
                 {
                     "client_id": 24,
@@ -306,10 +306,10 @@
             "appointment_slots": [
                 {
                     "client_id": 20,
-                    "time": "10:0 am"
+                    "time": "10:00 am"
                 },
                 {
-                    "client_id": "null",
+                    "client_id": "available",
                     "time": "10:15 am"
                 },
                 {
@@ -329,8 +329,8 @@
             "event_date": "8/5/2020",
             "appointment_slots": [
                 {
-                    "client_id": "null",
-                    "time": "10:0 am"
+                    "client_id": "available",
+                    "time": "10:00 am"
                 },
                 {
                     "client_id": 21,
@@ -354,14 +354,14 @@
             "appointment_slots": [
                 {
                     "client_id": 29,
-                    "time": "10:0 am"
+                    "time": "10:00 am"
                 },
                 {
                     "client_id": 1,
                     "time": "10:15 am"
                 },
                 {
-                    "client_id": "null",
+                    "client_id": "available",
                     "time": "10:30 am"
                 },
                 {
@@ -378,7 +378,7 @@
             "appointment_slots": [
                 {
                     "client_id": 5,
-                    "time": "10:0 am"
+                    "time": "10:00 am"
                 },
                 {
                     "client_id": 8,
@@ -402,7 +402,7 @@
             "appointment_slots": [
                 {
                     "client_id": 9,
-                    "time": "10:0 am"
+                    "time": "10:00 am"
                 },
                 {
                     "client_id": 21,
@@ -413,7 +413,7 @@
                     "time": "10:30 am"
                 },
                 {
-                    "client_id": "null",
+                    "client_id": "available",
                     "time": "10:45 am"
                 }
             ]
@@ -426,14 +426,14 @@
             "appointment_slots": [
                 {
                     "client_id": 26,
-                    "time": "10:0 am"
+                    "time": "10:00 am"
                 },
                 {
-                    "client_id": "null",
+                    "client_id": "available",
                     "time": "10:15 am"
                 },
                 {
-                    "client_id": "null",
+                    "client_id": "available",
                     "time": "10:30 am"
                 },
                 {
@@ -449,11 +449,11 @@
             "event_date": "8/4/2020",
             "appointment_slots": [
                 {
-                    "client_id": "null",
-                    "time": "10:0 am"
+                    "client_id": "available",
+                    "time": "10:00 am"
                 },
                 {
-                    "client_id": "null",
+                    "client_id": "available",
                     "time": "10:15 am"
                 },
                 {
@@ -473,19 +473,19 @@
             "event_date": "7/30/2020",
             "appointment_slots": [
                 {
-                    "client_id": "null",
-                    "time": "10:0 am"
+                    "client_id": "available",
+                    "time": "10:00 am"
                 },
                 {
                     "client_id": 24,
                     "time": "10:15 am"
                 },
                 {
-                    "client_id": "null",
+                    "client_id": "available",
                     "time": "10:30 am"
                 },
                 {
-                    "client_id": "null",
+                    "client_id": "available",
                     "time": "10:45 am"
                 }
             ]
@@ -498,10 +498,10 @@
             "appointment_slots": [
                 {
                     "client_id": 8,
-                    "time": "10:0 am"
+                    "time": "10:00 am"
                 },
                 {
-                    "client_id": "null",
+                    "client_id": "available",
                     "time": "10:15 am"
                 },
                 {

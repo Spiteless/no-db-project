@@ -8,6 +8,29 @@
   align-items: center;
 }
 
+button {
+  display: inline-block;
+  border: none;
+  /* padding: 1rem 2rem; */
+  margin: 0;
+  text-decoration: none;
+  background: transparent;
+  color:inherit;
+  font-family: sans-serif;
+  /* font-size: 1rem;
+  line-height: 1; */
+  cursor: pointer;
+  text-align: center;
+  /* transition: background 250ms ease-in-out, transform 150ms ease; */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  color: white;
+}
+
 .row{
   display: flex;
   flex-direction: row;
@@ -76,6 +99,7 @@ h3{
 }
 
 .event-box{
+  position: relative;
   border-radius: 10px;
   background-color: black;
   margin-top: 10px;
@@ -117,15 +141,76 @@ h3{
 .event-timeslot {
   font-size: .6em;
 }
+.event-tools{
+  cursor: pointer;
+}
+
+.event-remove-event{
+  font-size: .87em;
+  position: absolute;
+  top: 3px;
+  right: 6px;
+}
+.event-remove-event:hover,
+.event-remove-event:focus  {
+  color: red;
+}
+.event-edit-event{
+  font-size: 1.1em;
+  position: absolute;
+  top: 3px;
+  right: 30px;
+  /* color: red; */
+}
+.event-edit-event:hover,
+.event-edit-event:focus  {
+  color: yellow;
+}
+
+.event-add-client{
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  font-size: .65em;
+}
+
+.event-add-client:hover,
+.event-add-client:focus  {
+  color: #00db07;
+}
 
 .event-remove-client{
   position: absolute;
   top: 3px;
-  right: 3px;
+  right: 0px;
   font-size: .6em;
-  cursor: pointer;
+}
+
+.event-remove-client:hover,
+.event-remove-client:focus  {
+  color: red;
+}
+
+.event-edit-client{
+  position: absolute;
+  bottom: 3px;
+  right: 0px;
+}
+
+.event-edit-client:hover,
+.event-edit-client:focus  {
+  color: yellow;
+}
+
+.event-edit-client img{
+  color: white;
 }
 
 .green-border {
   border-color: lightgreen;
 }
+
+.pointer {
+  cursor: pointer;
+}
+
