@@ -1,43 +1,46 @@
 import React from 'react';
+import EventAppSlot from './EventAppSlot.js'
 
+function mappedEvents(props) {
+    
+    return (
+        <div className="test">{props.val}</div>
+    )
+}
 
 function Event (props){
     const eventsMap = props.events.map( E => {
-        // const {id, business_name, address, event_date, appointment_slots} = E
-        const appointments_rendered = E.appointment_slots.map( (app_val, index) => {
-            // let this_user = [...props.users].filter( u => u.id === app_val)
-            // this_user = this_user[0]
-            // console.log("this_user", this_user)
-            // let slotInfo = null
-            // let userIndex = null
-            // if (app_val) {
-            //     console.log("app_val", app_val, "index", index)
-            //     userIndex = props.users.findIndex( u => props.users.id === app_val)
-            //     const user = props.users[userIndex]
-            //     slotInfo = (userIndex) ? user.name : "available"
-            // }
+        const {id, business_name, address, event_date, appointment_slots} = E
+
+        const appointments_rendered = appointment_slots.map( (app_val, index) => {
             let val = null
-            let user = null
+            let clientName = null
             val = (app_val) ? +app_val : null
-            console.log(props.users[0], val, typeof val)
-            if (val) { user = props.users[val].name }
-            let classes = (user) ? "event-booked" : "event-available"
+            if (val) { clientName = props.users[val].name }
+            let classes = (clientName) ? "event-booked" : "event-available"
+            let displayVal = (clientName) ? clientName : "available"
             classes = "app-slot " + classes
+
             return (
-            <div className={"app-slot"}
-            key={index + "map"}
-            className={classes}>
-                { (user) ? user : "available" }
-            </div>
+            <EventAppSlot
+                key={index+"EventAppSlot"}
+                app_val = {+app_val}
+                index = {index}
+                displayVal = {displayVal}
+                classes = {classes}
+                
+            > 
+            </EventAppSlot>
         )})
+
     return(
-        <div className="event-box" key={E.id}>
+        <div className="event-box" key={id}>
             <div className="row event-info-line">
-                <h2 className="event-name">{E.business_name}</h2>
-                <h3 className="event-date">{E.event_date}</h3>
-                <h3 className="event-address">{E.address}</h3>
+                <h2 className="event-name">{business_name}</h2>
+                <h3 className="event-date">{event_date}</h3>
+                <h3 className="event-address">{address}</h3>
             </div>
-            <div className="row">
+            <div className="row event-appointment-row">
                 {appointments_rendered}
             </div>
         </div>
