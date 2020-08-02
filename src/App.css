@@ -26,6 +26,40 @@ h3{
   font-size: .6em;
 }
 
+.nav-container {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  width: 100vw;
+}
+
+.nav-link a {
+  float: left;
+  padding: 14px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover:not(.active){
+  background-color: #111;
+  cursor: pointer;
+}
+
+.nav-active a{
+  background-color: #4caf50;
+  font-weight: bold;
+  
+}
+
+.link-active{
+
+}
+
+
+
+
 .event-container{
   width: 600px;
   height: 100px;
