@@ -158,131 +158,361 @@
             "address": "5 Lien Plaza",
             "event_date": "8/5/2020",
             "appointment_slots": [
-                "2",
-                "24",
-                "22",
-                "12"
+                2,
+                24,
+                22,
+                12
             ]
         },
         {
             "id": 2,
-            "business_name": "Tagfeed",
-            "address": "4881 Steensland Park",
-            "event_date": "8/12/2020",
+            "business_name": "Skimia",
+            "address": "25815 Southridge Pass",
+            "event_date": "7/29/2020",
             "appointment_slots": [
-                null,
-                null,
-                null,
-                "2"
+                20,
+                "null",
+                14,
+                12
             ]
         },
         {
             "id": 3,
-            "business_name": "Topicshots",
-            "address": "9 Blackbird Trail",
-            "event_date": "7/23/2020",
+            "business_name": "Eimbee",
+            "address": "57589 Sycamore Crossing",
+            "event_date": "8/5/2020",
             "appointment_slots": [
-                null,
-                null,
-                null,
-                1
+                "null",
+                21,
+                9,
+                7
             ]
         },
         {
             "id": 4,
-            "business_name": "Roombo",
-            "address": "3 School Street",
-            "event_date": "8/10/2020",
+            "business_name": "Shufflebeat",
+            "address": "82 Anthes Hill",
+            "event_date": "8/1/2020",
             "appointment_slots": [
-                null,
-                null,
-                null,
-                1
+                29,
+                1,
+                "null",
+                10
             ]
         },
         {
             "id": 5,
-            "business_name": "Skipstorm",
-            "address": "04455 Sundown Point",
-            "event_date": "8/14/2020",
+            "business_name": "Thoughtblab",
+            "address": "3696 Rockefeller Parkway",
+            "event_date": "7/31/2020",
             "appointment_slots": [
-                null,
-                null,
-                null,
-                1
+                5,
+                8,
+                9,
+                25
             ]
         },
         {
             "id": 6,
-            "business_name": "Viva",
-            "address": "59864 Pawling Center",
-            "event_date": "8/12/2020",
+            "business_name": "Thoughtworks",
+            "address": "7246 Badeau Trail",
+            "event_date": "8/4/2020",
             "appointment_slots": [
-                null,
-                null,
-                null,
-                1
+                9,
+                21,
+                3,
+                "null"
             ]
         },
         {
             "id": 7,
-            "business_name": "Ailane",
-            "address": "8 Arapahoe Junction",
-            "event_date": "8/4/2020",
+            "business_name": "Edgeify",
+            "address": "1435 Graceland Parkway",
+            "event_date": "7/31/2020",
             "appointment_slots": [
-                null,
-                null,
-                null,
-                1
+                26,
+                "null",
+                "null",
+                15
             ]
         },
         {
             "id": 8,
-            "business_name": "Trilia",
-            "address": "36425 Hoffman Pass",
-            "event_date": "8/14/2020",
+            "business_name": "Youbridge",
+            "address": "86092 Miller Parkway",
+            "event_date": "8/4/2020",
             "appointment_slots": [
-                null,
-                null,
-                null,
-                1
+                "null",
+                "null",
+                5,
+                29
             ]
         },
         {
             "id": 9,
-            "business_name": "Blogspan",
-            "address": "2 Almo Plaza",
-            "event_date": "8/9/2020",
+            "business_name": "Bubbletube",
+            "address": "62798 Judy Parkway",
+            "event_date": "7/30/2020",
             "appointment_slots": [
-                null,
-                null,
-                null,
-                1
+                "null",
+                24,
+                "null",
+                "null"
             ]
         },
         {
             "id": 10,
-            "business_name": "Photolist",
-            "address": "822 Barby Hill",
-            "event_date": "7/29/2020",
+            "business_name": "Rhynoodle",
+            "address": "163 Logan Junction",
+            "event_date": "8/1/2020",
             "appointment_slots": [
-                null,
-                null,
-                null,
-                1
+                8,
+                "null",
+                23,
+                20
             ]
         }
     ],
-    "events":[
-    {"id":1,"business_name":"Browsezoom","address":"5 Lien Plaza","event_date":"8/5/2020","appointment_slots":[2,24,22,12]},
-    {"id":2,"business_name":"Skimia","address":"25815 Southridge Pass","event_date":"7/29/2020","appointment_slots":[20,"null",14,12]},
-    {"id":3,"business_name":"Eimbee","address":"57589 Sycamore Crossing","event_date":"8/5/2020","appointment_slots":["null",21,9,7]},
-    {"id":4,"business_name":"Shufflebeat","address":"82 Anthes Hill","event_date":"8/1/2020","appointment_slots":[29,1,"null",10]},
-    {"id":5,"business_name":"Thoughtblab","address":"3696 Rockefeller Parkway","event_date":"7/31/2020","appointment_slots":[5,8,9,25]},
-    {"id":6,"business_name":"Thoughtworks","address":"7246 Badeau Trail","event_date":"8/4/2020","appointment_slots":[9,21,3,"null"]},
-    {"id":7,"business_name":"Edgeify","address":"1435 Graceland Parkway","event_date":"7/31/2020","appointment_slots":[26,"null","null",15]},
-    {"id":8,"business_name":"Youbridge","address":"86092 Miller Parkway","event_date":"8/4/2020","appointment_slots":["null","null",5,29]},
-    {"id":9,"business_name":"Bubbletube","address":"62798 Judy Parkway","event_date":"7/30/2020","appointment_slots":["null",24,"null","null"]},
-    {"id":10,"business_name":"Rhynoodle","address":"163 Logan Junction","event_date":"8/1/2020","appointment_slots":[8,"null",23,20]}
-]
+    "events": [
+        {
+            "id": 1,
+            "business_name": "Browsezoom",
+            "address": "5 Lien Plaza",
+            "event_date": "8/5/2020",
+            "appointment_slots": [
+                {
+                    "client_id": 2,
+                    "time": "10:0 am"
+                },
+                {
+                    "client_id": 24,
+                    "time": "10:15 am"
+                },
+                {
+                    "client_id": 22,
+                    "time": "10:30 am"
+                },
+                {
+                    "client_id": 12,
+                    "time": "10:45 am"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "business_name": "Skimia",
+            "address": "25815 Southridge Pass",
+            "event_date": "7/29/2020",
+            "appointment_slots": [
+                {
+                    "client_id": 20,
+                    "time": "10:0 am"
+                },
+                {
+                    "client_id": "null",
+                    "time": "10:15 am"
+                },
+                {
+                    "client_id": 14,
+                    "time": "10:30 am"
+                },
+                {
+                    "client_id": 12,
+                    "time": "10:45 am"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "business_name": "Eimbee",
+            "address": "57589 Sycamore Crossing",
+            "event_date": "8/5/2020",
+            "appointment_slots": [
+                {
+                    "client_id": "null",
+                    "time": "10:0 am"
+                },
+                {
+                    "client_id": 21,
+                    "time": "10:15 am"
+                },
+                {
+                    "client_id": 9,
+                    "time": "10:30 am"
+                },
+                {
+                    "client_id": 7,
+                    "time": "10:45 am"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "business_name": "Shufflebeat",
+            "address": "82 Anthes Hill",
+            "event_date": "8/1/2020",
+            "appointment_slots": [
+                {
+                    "client_id": 29,
+                    "time": "10:0 am"
+                },
+                {
+                    "client_id": 1,
+                    "time": "10:15 am"
+                },
+                {
+                    "client_id": "null",
+                    "time": "10:30 am"
+                },
+                {
+                    "client_id": 10,
+                    "time": "10:45 am"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "business_name": "Thoughtblab",
+            "address": "3696 Rockefeller Parkway",
+            "event_date": "7/31/2020",
+            "appointment_slots": [
+                {
+                    "client_id": 5,
+                    "time": "10:0 am"
+                },
+                {
+                    "client_id": 8,
+                    "time": "10:15 am"
+                },
+                {
+                    "client_id": 9,
+                    "time": "10:30 am"
+                },
+                {
+                    "client_id": 25,
+                    "time": "10:45 am"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "business_name": "Thoughtworks",
+            "address": "7246 Badeau Trail",
+            "event_date": "8/4/2020",
+            "appointment_slots": [
+                {
+                    "client_id": 9,
+                    "time": "10:0 am"
+                },
+                {
+                    "client_id": 21,
+                    "time": "10:15 am"
+                },
+                {
+                    "client_id": 3,
+                    "time": "10:30 am"
+                },
+                {
+                    "client_id": "null",
+                    "time": "10:45 am"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "business_name": "Edgeify",
+            "address": "1435 Graceland Parkway",
+            "event_date": "7/31/2020",
+            "appointment_slots": [
+                {
+                    "client_id": 26,
+                    "time": "10:0 am"
+                },
+                {
+                    "client_id": "null",
+                    "time": "10:15 am"
+                },
+                {
+                    "client_id": "null",
+                    "time": "10:30 am"
+                },
+                {
+                    "client_id": 15,
+                    "time": "10:45 am"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "business_name": "Youbridge",
+            "address": "86092 Miller Parkway",
+            "event_date": "8/4/2020",
+            "appointment_slots": [
+                {
+                    "client_id": "null",
+                    "time": "10:0 am"
+                },
+                {
+                    "client_id": "null",
+                    "time": "10:15 am"
+                },
+                {
+                    "client_id": 5,
+                    "time": "10:30 am"
+                },
+                {
+                    "client_id": 29,
+                    "time": "10:45 am"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "business_name": "Bubbletube",
+            "address": "62798 Judy Parkway",
+            "event_date": "7/30/2020",
+            "appointment_slots": [
+                {
+                    "client_id": "null",
+                    "time": "10:0 am"
+                },
+                {
+                    "client_id": 24,
+                    "time": "10:15 am"
+                },
+                {
+                    "client_id": "null",
+                    "time": "10:30 am"
+                },
+                {
+                    "client_id": "null",
+                    "time": "10:45 am"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "business_name": "Rhynoodle",
+            "address": "163 Logan Junction",
+            "event_date": "8/1/2020",
+            "appointment_slots": [
+                {
+                    "client_id": 8,
+                    "time": "10:0 am"
+                },
+                {
+                    "client_id": "null",
+                    "time": "10:15 am"
+                },
+                {
+                    "client_id": 23,
+                    "time": "10:30 am"
+                },
+                {
+                    "client_id": 20,
+                    "time": "10:45 am"
+                }
+            ]
+        }
+    ]
 }

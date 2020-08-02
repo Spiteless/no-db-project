@@ -67,6 +67,14 @@ h3{
   align-content: center;
 }
 
+
+.event-timeslot-container {
+  border: 1px solid;
+  position: relative;
+  /* padding-bottom: 10px; */
+  margin-bottom: 10px;
+}
+
 .event-box{
   border-radius: 10px;
   background-color: black;
@@ -74,7 +82,6 @@ h3{
 }
 
 .app-slot{
-  border: lightgreen 1px solid;
   margin-top: 5px;
   margin-bottom: 5px;
   width: 140px;
@@ -85,12 +92,12 @@ h3{
 
 .event-available{ 
   color: lightgreen;
-  border-color: ;
+  font-size: 1em;
 }
 
 .event-booked{ 
   border-color: white;
-  
+  font-size: 1em;
 }
 
 .event-info-line{
@@ -105,4 +112,20 @@ h3{
 .event-info-line>h2, .event-info-line>h3{
   justify-content: space-between;
   margin: 0px 20px 0px 20px;
+}
+
+.event-timeslot {
+  font-size: .6em;
+}
+
+.event-remove-client{
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  font-size: .6em;
+  cursor: pointer;
+}
+
+.green-border {
+  border-color: lightgreen;
 }

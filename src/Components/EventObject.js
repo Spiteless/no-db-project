@@ -8,21 +8,40 @@ function EventObject(props) {
     const {id, business_name, address, event_date, appointment_slots} = props.activeEvent
     const {users} = props.users
 
-    const appointments_rendered = appointment_slots.map( (app_val, index) => {
-        let val = null
-        let clientName = null
-        val = (app_val) ? +app_val : null
-        if (val) { clientName = props.users[val].name }
-        let classes = (clientName) ? "event-booked" : "event-available"
-        let displayVal = (clientName) ? clientName : "available"
-        classes = "app-slot " + classes
+    const appointments_rendered = appointment_slots.map( (appInfo, index) => {
+
+        /* 
+        let displayVal = "available"
+        if (Number(appInfo.clientId)) { 
+            displayVal = props.users[val].name //client's name
+        }
+        */
+
+        // let val = null
+        // let clientName = null
+        // val = (appInfo.client_id) ? +appInfo.client_id : null
+        // if (val) { clientName = props.users[val].name }
+        // let classes = (clientName) ? "event-booked" : "event-available"
+        // let displayVal = (clientName) ? clientName : "available"
+        // classes = "app-slot " + classes
+
+        let val = (appInfo.client_id) ? +appInfo.client_id : null
+
+        let displayVal = "available"
+        if (Number(appInfo.client_id)) { 
+            displayVal = props.users[val].name //client's name
+        }
+        let classes = (displayVal === "available")
+            ? "event-available"
+            : "event-booked"
+        // classes = "app-slot " + classes
 
         return (
         <EventAppSlot
             key={index+"EventAppSlot"}
-            app_val = {+app_val}
             index = {index}
             displayVal = {displayVal}
+            timeVal = {appInfo.time}
             classes = {classes}
             
         > 
