@@ -7,8 +7,12 @@ const ctrl = require('./controllers/mainCtrl')
 
 app.use(express.json())
 
-const api = { users:'/api/users/',
+const api = { base:'/api/',
+              users:'/api/users/',
               events:'/api/events/' }
+
+//base endpoint
+app.get(api.base, ctrl.base.get)              
 
 //users endpoints
 app.get(api.users, ctrl.users.get)

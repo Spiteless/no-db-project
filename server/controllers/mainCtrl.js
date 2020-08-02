@@ -10,7 +10,11 @@ let nextEventID = data.events.length + 1
         "gender": "Male",
         "paid": true
 */
-
+const baseCtrl = {
+    get: (req, res) => {
+        return res.status(200).send(data)
+    },
+}
 const userCtrl = {
     get: (req, res) => {
         return res.status(200).send(data.users)
@@ -71,7 +75,7 @@ const eventsCtrl = {
     },
     delete: (req, res) => {
         const {id} = req.params
-        const index = data.events.findIndex( e => E.id === +id)
+        const index = data.events.findIndex( e => e.id === +id)
         if (index === -1) { res.status(404).send("No such event") }
         else { data.events.splice(index, 1) 
             return res.status(200).send(data.events)
@@ -82,6 +86,7 @@ const eventsCtrl = {
 
 
 module.exports = {
+    base: baseCtrl,
     users: userCtrl,
-    events: eventsCtrl
+    events: eventsCtrl,
 }

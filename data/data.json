@@ -2,145 +2,287 @@
     "users": [
         {
             "id": 1,
-            "first_name": "Stanly",
-            "last_name": "Woodland",
-            "email": "swoodland0@vistaprint.com",
-            "gender": "Male",
+            "name": "Zitella Pickavance",
             "paid": true
         },
         {
             "id": 2,
-            "first_name": "Vern",
-            "last_name": "Tarver",
-            "email": "vtarver1@icq.com",
-            "gender": "Male",
-            "paid": true
+            "name": "Cornell Hackney",
+            "paid": false
         },
         {
             "id": 3,
-            "first_name": "Percival",
-            "last_name": "Grzegorek",
-            "email": "pgrzegorek2@chron.com",
-            "gender": "Male",
+            "name": "Jacques Cappelle",
             "paid": true
         },
         {
             "id": 4,
-            "first_name": "Janifer",
-            "last_name": "Corpes",
-            "email": "jcorpes3@123-reg.co.uk",
-            "gender": "Female",
+            "name": "Renado Whitford",
             "paid": true
         },
         {
             "id": 5,
-            "first_name": "Con",
-            "last_name": "Saipy",
-            "email": "csaipy4@usda.gov",
-            "gender": "Female",
+            "name": "Ferne Bonnet",
             "paid": false
         },
         {
             "id": 6,
-            "first_name": "Troy",
-            "last_name": "Lago",
-            "email": "tlago5@gnu.org",
-            "gender": "Male",
-            "paid": true
+            "name": "Wilona Cyseley",
+            "paid": false
         },
         {
             "id": 7,
-            "first_name": "Bealle",
-            "last_name": "Carletti",
-            "email": "bcarletti6@washingtonpost.com",
-            "gender": "Male",
-            "paid": true
+            "name": "Dolli Garth",
+            "paid": false
         },
         {
             "id": 8,
-            "first_name": "Sheppard",
-            "last_name": "Simenet",
-            "email": "ssimenet7@photobucket.com",
-            "gender": "Male",
+            "name": "Chiquita Ketch",
             "paid": true
         },
         {
             "id": 9,
-            "first_name": "Hobey",
-            "last_name": "Banner",
-            "email": "hbanner8@typepad.com",
-            "gender": "Male",
-            "paid": false
+            "name": "Robin Thor",
+            "paid": true
         },
         {
             "id": 10,
-            "first_name": "Rolfe",
-            "last_name": "Yellowley",
-            "email": "ryellowley9@goo.ne.jp",
-            "gender": "Male",
+            "name": "Catharina Cowern",
+            "paid": true
+        },
+        {
+            "id": 11,
+            "name": "Sally Tythe",
             "paid": false
+        },
+        {
+            "id": 12,
+            "name": "Filberte Bernet",
+            "paid": false
+        },
+        {
+            "id": 13,
+            "name": "Conrad Blowes",
+            "paid": false
+        },
+        {
+            "id": 14,
+            "name": "Philly Dale",
+            "paid": false
+        },
+        {
+            "id": 15,
+            "name": "Guenna Speake",
+            "paid": true
+        },
+        {
+            "id": 16,
+            "name": "Lizabeth Weepers",
+            "paid": true
+        },
+        {
+            "id": 17,
+            "name": "Annaliese Oxtiby",
+            "paid": false
+        },
+        {
+            "id": 18,
+            "name": "Roxanne Arrandale",
+            "paid": false
+        },
+        {
+            "id": 19,
+            "name": "Roley Riggulsford",
+            "paid": false
+        },
+        {
+            "id": 20,
+            "name": "Seth Weatherby",
+            "paid": true
+        },
+        {
+            "id": 21,
+            "name": "Eddy Edinboro",
+            "paid": true
+        },
+        {
+            "id": 22,
+            "name": "Elora Norwich",
+            "paid": false
+        },
+        {
+            "id": 23,
+            "name": "Jay Snare",
+            "paid": true
+        },
+        {
+            "id": 24,
+            "name": "Cary Schukert",
+            "paid": false
+        },
+        {
+            "id": 25,
+            "name": "Lisle Botham",
+            "paid": false
+        },
+        {
+            "id": 26,
+            "name": "Arman Jesson",
+            "paid": false
+        },
+        {
+            "id": 27,
+            "name": "Minerva Bogart",
+            "paid": false
+        },
+        {
+            "id": 28,
+            "name": "Erie Stapells",
+            "paid": true
+        },
+        {
+            "id": 29,
+            "name": "Brigham Knok",
+            "paid": false
+        },
+        {
+            "id": 30,
+            "name": "Shoshana Pottes",
+            "paid": true
         }
     ],
     "events": [
         {
             "id": 1,
-            "business_name": "Skiptube",
-            "address": "2 Center Drive",
-            "event_date": "7/27/2020"
+            "business_name": "Browsezoom",
+            "address": "5 Lien Plaza",
+            "event_date": "8/5/2020",
+            "appointment_slots": [
+                "2",
+                "24",
+                "22",
+                "12"
+            ]
         },
         {
             "id": 2,
             "business_name": "Tagfeed",
             "address": "4881 Steensland Park",
-            "event_date": "8/12/2020"
+            "event_date": "8/12/2020",
+            "appointment_slots": [
+                null,
+                null,
+                null,
+                "2"
+            ]
         },
         {
             "id": 3,
             "business_name": "Topicshots",
             "address": "9 Blackbird Trail",
-            "event_date": "7/23/2020"
+            "event_date": "7/23/2020",
+            "appointment_slots": [
+                null,
+                null,
+                null,
+                1
+            ]
         },
         {
             "id": 4,
             "business_name": "Roombo",
             "address": "3 School Street",
-            "event_date": "8/10/2020"
+            "event_date": "8/10/2020",
+            "appointment_slots": [
+                null,
+                null,
+                null,
+                1
+            ]
         },
         {
             "id": 5,
             "business_name": "Skipstorm",
             "address": "04455 Sundown Point",
-            "event_date": "8/14/2020"
+            "event_date": "8/14/2020",
+            "appointment_slots": [
+                null,
+                null,
+                null,
+                1
+            ]
         },
         {
             "id": 6,
             "business_name": "Viva",
             "address": "59864 Pawling Center",
-            "event_date": "8/12/2020"
+            "event_date": "8/12/2020",
+            "appointment_slots": [
+                null,
+                null,
+                null,
+                1
+            ]
         },
         {
             "id": 7,
             "business_name": "Ailane",
             "address": "8 Arapahoe Junction",
-            "event_date": "8/4/2020"
+            "event_date": "8/4/2020",
+            "appointment_slots": [
+                null,
+                null,
+                null,
+                1
+            ]
         },
         {
             "id": 8,
             "business_name": "Trilia",
             "address": "36425 Hoffman Pass",
-            "event_date": "8/14/2020"
+            "event_date": "8/14/2020",
+            "appointment_slots": [
+                null,
+                null,
+                null,
+                1
+            ]
         },
         {
             "id": 9,
             "business_name": "Blogspan",
             "address": "2 Almo Plaza",
-            "event_date": "8/9/2020"
+            "event_date": "8/9/2020",
+            "appointment_slots": [
+                null,
+                null,
+                null,
+                1
+            ]
         },
         {
             "id": 10,
             "business_name": "Photolist",
             "address": "822 Barby Hill",
-            "event_date": "7/29/2020"
+            "event_date": "7/29/2020",
+            "appointment_slots": [
+                null,
+                null,
+                null,
+                1
+            ]
         }
-    ]
+    ],
+    "events":[
+    {"id":1,"business_name":"Browsezoom","address":"5 Lien Plaza","event_date":"8/5/2020","appointment_slots":[2,24,22,12]},
+    {"id":2,"business_name":"Skimia","address":"25815 Southridge Pass","event_date":"7/29/2020","appointment_slots":[20,"null",14,12]},
+    {"id":3,"business_name":"Eimbee","address":"57589 Sycamore Crossing","event_date":"8/5/2020","appointment_slots":["null",21,9,7]},
+    {"id":4,"business_name":"Shufflebeat","address":"82 Anthes Hill","event_date":"8/1/2020","appointment_slots":[29,1,"null",10]},
+    {"id":5,"business_name":"Thoughtblab","address":"3696 Rockefeller Parkway","event_date":"7/31/2020","appointment_slots":[5,8,9,25]},
+    {"id":6,"business_name":"Thoughtworks","address":"7246 Badeau Trail","event_date":"8/4/2020","appointment_slots":[9,21,3,"null"]},
+    {"id":7,"business_name":"Edgeify","address":"1435 Graceland Parkway","event_date":"7/31/2020","appointment_slots":[26,"null","null",15]},
+    {"id":8,"business_name":"Youbridge","address":"86092 Miller Parkway","event_date":"8/4/2020","appointment_slots":["null","null",5,29]},
+    {"id":9,"business_name":"Bubbletube","address":"62798 Judy Parkway","event_date":"7/30/2020","appointment_slots":["null",24,"null","null"]},
+    {"id":10,"business_name":"Rhynoodle","address":"163 Logan Junction","event_date":"8/1/2020","appointment_slots":[8,"null",23,20]}
+]
 }

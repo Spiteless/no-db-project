@@ -1,38 +1,70 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  width: 100vw;
+  height: 100vh;
   flex-direction: column;
+  display: flex;
+  text-align: center;
+  align-content: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+h1{ 
+  font-size: 2em;
+}
+
+h2{ 
+  font-size: 1.2em;
+}
+
+h3{ 
+  font-size: .6em;
+}
+
+.event-container{
+  width: 600px;
+  height: 100px;
   color: white;
+  align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.event-box{
+  border-radius: 10px;
+  background-color: black;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-slot{
+  border: lightgreen 1px solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 140px;
+  height: 25px;
+  align-items: center;
+  vertical-align: center;
+}
+
+.event-available{ 
+  color: lightgreen;
+  border-color: ;
+}
+
+.event-booked{ 
+  border-color: white;
+  
+}
+
+.event-info-line{
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.event-info-line>h2, .event-info-line>h3{
+  justify-content: space-between;
+  margin: 0px 20px 0px 20px;
 }

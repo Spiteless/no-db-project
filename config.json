@@ -1,0 +1,7 @@
+{
+    "api": { "base":"/api/",
+        "users":"/api/users/",
+        "events":"/api/events/"
+    }
+    
+}
