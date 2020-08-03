@@ -5,15 +5,6 @@ class UserForm extends React.Component{
     super(props)
     this.state = {
           id: "",
-          // "name": "",
-          // "address": "",
-          // "event_date": "",
-          // "appointment_slots": [
-          //   {"client_id": "null","time": "10:00 am"},
-          //   {"client_id": "null","time": "10:15 am"},
-          //   {"client_id": "null","time": "10:30 am"},
-          //   {"client_id": "null","time": "10:45 am"},
-          // ],
           ...this.props
     }
     this.handleChange = this.handleChange.bind(this)
@@ -30,31 +21,34 @@ class UserForm extends React.Component{
   }
 
   updateAppointmentInfo = () => {
-    let updatedAppointment = {
-      id: this.state.id,
-      name: this.state.name,
-    }
+    //{client_id: 14, time: "10:30 am"}
+    let newClientID = +this.state.id
+    // let newArray = [...this.props.event.appointment_slots]
+    let eventIndex = this.props.events.findIndex( el => el.id === this.props.eventId)
+    let clonedObj = {...this.props.events[eventIndex]}
+    clonedObj.appointment_slots[this.props.editUserNumber].client_id = +newClientID
+    console.log(clonedObj)
 
-    console.log(updatedAppointment)
       this.props.toggleEditUser()
-      this.props.editUser(this.state.id, updatedAppointment)          
+      this.props.editUser(clonedObj.id, clonedObj)          
   }
 
 
   render() {
+    // console.log("PROPS1231232398y3y492", this.props)
+    console.log("this.state", this.state)
+
     return (
       <div className="FormNewEvent">
         <div className="row input-row">
             Client by ID: <input type="text" value={this.state.activeUser} name="id" onChange={(e) => this.handleChange(e)}/>
         </div>
+        <div className="row display-row">
+          <div className="name">Name: Jane Doe</div>
+        </div>
         <div className="row input-row">
           <button className="form-send-button" onClick={() => this.updateAppointmentInfo()}>Submit</button>
           <button className="form-cancel-button" onClick={this.props.toggleEditUser}>Cancel</button>
-        </div>
-        <div className="row">
-          <p className="">{this.props.index}</p>
-          <p className=""></p>
-          {/* {JSON.stringify(this.props)} */}
         </div>
       </div>
       )

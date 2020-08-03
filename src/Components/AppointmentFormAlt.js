@@ -7,12 +7,6 @@ class AppointmentFormAlt extends React.Component{
           "business_name": "",
           "address": "",
           "event_date": "",
-          // "appointment_slots": [
-          //   {"client_id": "null","time": "10:00 am"},
-          //   {"client_id": "null","time": "10:15 am"},
-          //   {"client_id": "null","time": "10:30 am"},
-          //   {"client_id": "null","time": "10:45 am"},
-          // ],
           ...this.props
     }
     this.handleChange = this.handleChange.bind(this)
@@ -21,7 +15,6 @@ class AppointmentFormAlt extends React.Component{
   handleChange = (e) => {
     let change = {}
     change[e.target.name] = e.target.value
-    // console.log(change)
     this.setState(change)
     console.log(this.state)
 
@@ -46,13 +39,13 @@ updateAppointmentInfo = () => {
     return (
       <div className="FormNewEvent">
         <div className="row input-row">
-            Business Name: <input type="text" value={this.state.business_name} name="business_name" onChange={(e) => this.handleChange(e)}/>
+          <h3>Business Name:</h3><input type="text" value={this.state.business_name} name="business_name" onChange={(e) => this.handleChange(e)}/>
         </div>
         <div className="row input-row">
-            Business Address: <input type="text" value={this.state.address} name="address" onChange={(e) => this.handleChange(e)}/>
+            <h3>Business Address:</h3><input type="text" value={this.state.address} name="address" onChange={(e) => this.handleChange(e)}/>
         </div>
         <div className="row input-row">
-            Event Date: <input type="text" value={this.state.event_date} name="event_date" onChange={(e) => this.handleChange(e)}/>
+            <h3>Event Date:</h3><input type="text" value={this.state.event_date} name="event_date" onChange={(e) => this.handleChange(e)}/>
         </div>
         <div className="row input-row">
           <button className="form-send-button" onClick={() => this.updateAppointmentInfo()}>Submit</button>

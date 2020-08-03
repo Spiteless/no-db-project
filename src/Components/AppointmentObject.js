@@ -30,7 +30,7 @@ class AppointmentObject extends React.Component {
     }
     toggleEditUser = (appSlotNumber) => {
         let change = !this.state.editUser
-        
+        console.log("appslotnumber", appSlotNumber)
         this.setState({editUser: change, editUserNumber:appSlotNumber})
         // window.alert(this.state.editUserNumber)
     }
@@ -40,7 +40,7 @@ class AppointmentObject extends React.Component {
     //takes in the event to render over props
     //destructures properties to properly assign title, bizName, etc
     const { id, business_name, address, event_date, appointment_slots} = this.props.activeEvent
-    const { users, activeEvent, editEvent, editUser } = this.props
+    const { users, activeEvent, editEvent, editUser, events } = this.props
     
 
     const appointments_rendered = appointment_slots.map((appSlot, index) => {
@@ -123,9 +123,11 @@ class AppointmentObject extends React.Component {
                 event_date={event_date}
                 apponitment_slots={appointment_slots}
                 activeUser={appointment_slots.id}
-                editUser={editUser}
-                id={id}
+                editUser={editEvent}
+                eventId={id}
                 users={users}
+                events={events}
+                editUserNumber={this.state.editUserNumber}
             />
         </div>
     )

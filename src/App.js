@@ -41,6 +41,7 @@ class App extends React.Component {
     axios.get(api.base)
       .then((res) => {
         this.setState({ events: res.data.events, users: res.data.users })
+        console.log(res.data)
       }).catch(err => console.log(err))
   }
 

@@ -9,7 +9,7 @@ class Nav extends React.Component{
             { link: "View Events", src: "#", is_active: true, on_click: this.props.getData},
             { link: "New Event", src: "#", is_active: false, on_click: this.props.toggleNewEvent},
         ]
-    
+        
     }
   }
 
@@ -28,7 +28,12 @@ class Nav extends React.Component{
     return (  
     <nav className="Nav">
      <ul className="nav-container">
+       <div className="nav-beginning">
          {linksMapped}
+       </div>
+       <div className="nav-end">
+         <input name="Search" value="filter"/> <button className="btn-nav">Submit</button>
+       </div>
      </ul>
     </nav>
   );

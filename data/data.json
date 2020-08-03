@@ -159,7 +159,7 @@
             "event_date": "8/5/2020",
             "appointment_slots": [
                 {
-                    "client_id": 2,
+                    "client_id": 4,
                     "time": "10:00 am"
                 },
                 {
