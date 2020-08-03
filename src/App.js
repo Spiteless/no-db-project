@@ -4,7 +4,7 @@ import './App.css';
 
 import axios from 'axios'
 import Nav from './Components/Nav'
-import Event from './Components/Event'
+import Appointment from './Components/Appointment'
 
 const { api } = require('./config.json')
 
@@ -19,16 +19,25 @@ class App extends React.Component {
       },
       events: [],
       users: [],
-      edit: false
+      newEvent_toggle: false,
     }
+    this.toggleNewEvent = this.toggleNewEvent.bind(this);
+    this.addEvent = this.addEvent.bind(this);
+    this.getData = this.getData.bind(this)
+
   }
   
 
   componentDidMount() {
-    this.initializeData()
+    this.getData()
   }
 
-  initializeData = () => {
+  toggleNewEvent() {
+    let change = !this.state.newEvent_toggle
+    this.setState( { newEvent_toggle: change})
+  }
+
+  getData = () => {
     axios.get(api.base)
       .then((res) => {
         this.setState({ events: res.data.events, users: res.data.users })
@@ -43,16 +52,17 @@ class App extends React.Component {
       .catch(err => console.log(err))
   }
 
-  addEvent = (newEventObj) => {
-    axios.post(api.events, { newEventObj })
+  addEvent = (newEvent) => {
+    axios.post(api.events, { newEvent })
       .then((res) => {
         this.setState({ events: res.data })
       })
       .catch(err => console.log(err))
   }
 
-  editEvent = (id, eventToEdit) => {
-    axios.put(api.events + id, { eventToEdit })
+  editEvent = (id, updatedEventObj) => {
+    console.log(id, updatedEventObj)
+    axios.put(api.events + id, { updatedEventObj })
       .then((res) => {
         this.setState({ events: res.data })
       })
@@ -86,17 +96,25 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Nav/>
-        <Event
+        <Nav
+          key="Nav"
+          toggleNewEvent = {this.toggleNewEvent}
+          getData = {this.getData}
+        />
+        <main>
+        <Appointment
           users={this.state.users}
           events={this.state.events}
           deleteEvent = {this.deleteEvent}
           editEvent = {this.editEvent}
-          addEvent = {this.editEvent}
+          addEvent = {this.addEvent}
           deleteUser = {this.deleteUser}
           editUser = {this.editUser}
           addUser = {this.addUser}
+          toggleNewEvent = {this.toggleNewEvent}
+          newEvent_toggle = {this.state.newEvent_toggle}
         />
+        </main>
       </div>
     );
   }

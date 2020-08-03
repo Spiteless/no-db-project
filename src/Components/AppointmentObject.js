@@ -1,16 +1,16 @@
 import React from 'react';
-import EventAppSlot from './EventAppSlot.js'
+import AppointmentSlot from './AppointmentSlot.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPencilAlt, faWindowClose } from '@fortawesome/free-solid-svg-icons'
 
 const removeIcon = <FontAwesomeIcon icon={faWindowClose} className="fa-lg pointer" />
 const editIcon = <FontAwesomeIcon icon={faPencilAlt} className="fa-sm pointer" />
 
-function EventObject(props) {
+function AppointmentObject(props) {
     //takes in the event to render over props
     //destructures properties to properly assign title, bizName, etc
-    const { id, business_name, address, event_date, appointment_slots } = props.activeEvent
-    const { users, activeEvent } = props
+    const { id, business_name, address, event_date, appointment_slots} = props.activeEvent
+    const { users, activeEvent, editEvent } = props
 
     const appointments_rendered = appointment_slots.map((appInfo, index) => {
 
@@ -30,12 +30,16 @@ function EventObject(props) {
         // classes = "app-slot " + classes
 
         return (
-            <EventAppSlot
+            <AppointmentSlot
                 key={index + "EventAppSlot"}
+                appSlotIndex = {index}
                 client = {client}
                 displayVal={displayVal}
                 timeVal={appInfo.time}
                 classes={classes}
+                editEvent={editEvent}
+                events={props.events}
+                eventID ={id}
             // eventID = {index}
             // appSlotID = 
             />
@@ -66,4 +70,4 @@ function EventObject(props) {
     )
 }
 
-export default EventObject;
+export default AppointmentObject;

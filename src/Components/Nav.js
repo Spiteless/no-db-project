@@ -1,29 +1,28 @@
 import React from 'react';
 
-const linkObjects = [
-    { link: "View Events", src: "#", active: true},
-    { link: "New Event", src: "#", active: false},
-]
-
 class Nav extends React.Component{
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
     this.state = {
-    //   users: [],
-    //   appointments: [],
+        linkObjects: [
+            { link: "View Events", src: "#", active: true, on_click: this.props.getData},
+            { link: "New Event", src: "#", active: false, on_click: this.props.toggleNewEvent},
+        ]
     
     }
   }
   componentDidMount(){
 
   }
+
+
   render() {
-    const linksMapped = linkObjects.map( l => {
+    const linksMapped = this.state.linkObjects.map( l => {
         let classes = "nav-link"
         if (l.active) { classes += " nav-active" }
         return (
             <li
-            className={classes}><a href={l.src}>{l.link}</a></li>
+            className={classes}><a href={l.src} onClick={l.on_click}>{l.link}</a></li>
         )})
       
     return (  

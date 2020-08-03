@@ -1,9 +1,9 @@
 .App {
   width: 100vw;
   height: 100vh;
-  flex-direction: column;
   display: flex;
   text-align: center;
+  flex-direction: column;
   align-content: center;
   align-items: center;
 }
@@ -76,12 +76,6 @@ h3{
   
 }
 
-.link-active{
-
-}
-
-
-
 
 .event-container{
   width: 600px;
@@ -110,8 +104,6 @@ h3{
   margin-bottom: 5px;
   width: 140px;
   height: 25px;
-  align-items: center;
-  vertical-align: center;
 }
 
 .event-available{ 
@@ -127,6 +119,7 @@ h3{
 .event-info-line{
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: baseline;
 }
 
 .event-info-line > *{
@@ -214,3 +207,6 @@ h3{
   cursor: pointer;
 }
 
+.input-row{
+  
+}
