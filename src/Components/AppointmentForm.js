@@ -29,10 +29,10 @@ class AppointmentForm extends React.Component{
           "address": "",
           "event_date": "",
           "appointment_slots": [
-            {"client_id": "null","time": "10:00 am"},
-            {"client_id": "null","time": "10:15 am"},
-            {"client_id": "null","time": "10:30 am"},
-            {"client_id": "null","time": "10:45 am"},
+            {"client_id": "available","time": "10:00 am"},
+            {"client_id": "available","time": "10:15 am"},
+            {"client_id": "available","time": "10:30 am"},
+            {"client_id": "available","time": "10:45 am"},
           ],
     }
   }
@@ -80,4 +80,5 @@ class AppointmentForm extends React.Component{
       )
   }
 }
+
 export default AppointmentForm;

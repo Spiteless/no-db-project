@@ -37,7 +37,7 @@ updateAppointmentInfo = () => {
     }
 
     console.log(updatedAppointment)
-      this.props.toggleEdit()
+      this.props.toggleEditAppointment()
       this.props.editEvent(this.state.id, updatedAppointment)          
   }
 

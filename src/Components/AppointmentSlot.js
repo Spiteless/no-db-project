@@ -7,25 +7,6 @@ const addIcon = <FontAwesomeIcon icon={faPlusSquare} className="fa-lg pointer" /
 const removeIcon = <FontAwesomeIcon icon={faWindowClose} className="fa-lg pointer" />
 const editIcon = <FontAwesomeIcon icon={faPencilAlt} className="fa-sm pointer" />
 
-const tools_editDelete = (
-    <div className="tools">
-        <button onClick={() => window.alert("remove")} className="event-remove-client">
-            {removeIcon}
-        </button>
-        <button onClick={() => window.alert("edit")} className="event-edit-client">
-            {editIcon}
-        </button>
-    </div>
-)
-
-const tools_add = (
-    <div className="tools">
-        <button onClick={() => window.alert("add")} className="event-add-client">
-            {addIcon}
-        </button>
-    </div>
-)
-
 
 class AppointmentSlot extends React.Component {
     constructor(props){
@@ -43,7 +24,7 @@ class AppointmentSlot extends React.Component {
                     <button onClick={() => this.removeClientFromSlot(this.props.eventID, this.props.appSlotIndex)} className="event-remove-client">
                         {removeIcon}
                     </button>
-                    <button onClick={() => window.alert("edit!!!!!!!")} className="event-edit-client">
+                    <button onClick={() => props.toggleEditUser(this.props.index)} className="event-edit-client">
                         {editIcon}
                     </button>
                 </div>

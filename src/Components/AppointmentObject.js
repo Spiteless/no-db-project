@@ -2,6 +2,7 @@
 import React from 'react';
 import AppointmentSlot from './AppointmentSlot.js'
 import AppointmentFormAlt from './AppointmentFormAlt.js'
+import UserForm from './UserForm.js'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPencilAlt, faWindowClose } from '@fortawesome/free-solid-svg-icons'
@@ -14,15 +15,24 @@ class AppointmentObject extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            edit: false,
+            editAppointment: false,
+            editUser: false,
+            editUserNumber: null,
         }
-        this.toggleEdit = this.toggleEdit.bind(this)    
+        this.toggleEditAppointment = this.toggleEditAppointment.bind(this)    
+        this.toggleEditUser = this.toggleEditUser.bind(this)    
         }
 
-    toggleEdit = () => {
-        let change = !this.state.edit
-        this.setState({edit: change})
+    toggleEditAppointment = () => {
+        let change = !this.state.editAppointment
+        this.setState({editAppointment: change})
         // window.alert(this.state.edit + "")
+    }
+    toggleEditUser = (appSlotNumber) => {
+        let change = !this.state.editUser
+        
+        this.setState({editUser: change, editUserNumber:appSlotNumber})
+        // window.alert(this.state.editUserNumber)
     }
 
     render(){
@@ -30,7 +40,7 @@ class AppointmentObject extends React.Component {
     //takes in the event to render over props
     //destructures properties to properly assign title, bizName, etc
     const { id, business_name, address, event_date, appointment_slots} = this.props.activeEvent
-    const { users, activeEvent, editEvent } = this.props
+    const { users, activeEvent, editEvent, editUser } = this.props
     
 
     const appointments_rendered = appointment_slots.map((appSlot, index) => {
@@ -51,6 +61,7 @@ class AppointmentObject extends React.Component {
         return (
             <AppointmentSlot
                 key={index + "EventAppSlot"}
+                index={index}
                 appSlotIndex = {index}
                 client = {client}
                 displayVal={displayVal}
@@ -59,7 +70,7 @@ class AppointmentObject extends React.Component {
                 editEvent={editEvent}
                 events={this.props.events}
                 eventID ={id}
-                toggleEdit={this.toggleEdit}
+                toggleEditUser={this.toggleEditUser}
             />
         )
     })
@@ -70,7 +81,7 @@ class AppointmentObject extends React.Component {
                 <div onClick={() => this.props.deleteEvent(activeEvent.id)} className="event-remove-event">
                     {removeIcon}
                 </div>
-                <div onClick={() => this.toggleEdit()} className="event-edit-event">
+                <div onClick={() => this.toggleEditAppointment()} className="event-edit-event">
                     {editIcon}
                 </div>
             </div>
@@ -85,12 +96,12 @@ class AppointmentObject extends React.Component {
         </div>
     )
 
-    const editDisplay = (
+    const editAppointmentDisplay = (
         <div className="event-box" key={id}>
             <AppointmentFormAlt
-                toggleEdit={this.toggleEdit}
+                toggleEditAppointment={this.toggleEditAppointment}
                 on_click_func={()=>null}
-                on_cancel_func={this.toggleEdit}
+                on_cancel_func={this.toggleEditAppointment}
                 business_name={business_name}
                 address={address}
                 event_date={event_date}
@@ -100,11 +111,31 @@ class AppointmentObject extends React.Component {
             />
         </div>
     )
- 
+        
+    const editUserDisplay = (
+        <div className="event-box" key={id}>
+            <UserForm
+                toggleEditUser={this.toggleEditUser}
+                on_click_func={()=>null}
+                on_cancel_func={this.toggleEditUser}
+                business_name={business_name}
+                address={address}
+                event_date={event_date}
+                apponitment_slots={appointment_slots}
+                activeUser={appointment_slots.id}
+                editUser={editUser}
+                id={id}
+                users={users}
+            />
+        </div>
+    )
 
     return (
         
-        <div>{(this.state.edit) ? editDisplay : normalDisplay}</div>
+        <div>{(this.state.editAppointment)
+            ? editAppointmentDisplay 
+            : (this.state.editUser) ? editUserDisplay
+                                    : normalDisplay}</div>
     )
 }
 }

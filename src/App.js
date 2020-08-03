@@ -86,6 +86,7 @@ class App extends React.Component {
   }
 
   editUser = (id, userToEdit) => {
+    console.log(id, userToEdit)
     axios.put(api.user + id, { userToEdit })
       .then((res) => {
         this.setState({ users: res.data })

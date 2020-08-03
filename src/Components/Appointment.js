@@ -1,6 +1,7 @@
 import React from 'react';
 import AppointmentObject from './AppointmentObject.js';
 import AppointmentForm from './AppointmentForm.js'
+import UserForm from './UserForm.js'
 
 /*
     users={this.state.users}
@@ -25,9 +26,8 @@ function Appointment(props) {
         <div className="event-box">
             <div className="event-container">
                 <AppointmentForm
-                    on_click_cancel={toggleNewEvent}
-                    on_click_submit={""}
                     addEvent={addEvent}
+                    toggleNewEvent={toggleNewEvent}
                 />
             </div>
         </div>
@@ -44,6 +44,7 @@ function Appointment(props) {
                     events={props.events}
                     deleteEvent={props.deleteEvent}
                     editEvent={props.editEvent}
+                    editUser={props.editUser}
                 />
             </section>
         )
