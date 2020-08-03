@@ -1,30 +1,30 @@
 import React from 'react';
+import NavLink from './NavLink.js'
 
 class Nav extends React.Component{
   constructor(props){
     super(props)
     this.state = {
         linkObjects: [
-            { link: "View Events", src: "#", active: true, on_click: this.props.getData},
-            { link: "New Event", src: "#", active: false, on_click: this.props.toggleNewEvent},
+            { link: "View Events", src: "#", is_active: true, on_click: this.props.getData},
+            { link: "New Event", src: "#", is_active: false, on_click: this.props.toggleNewEvent},
         ]
     
     }
   }
-  componentDidMount(){
-
-  }
-
 
   render() {
     const linksMapped = this.state.linkObjects.map( l => {
-        let classes = "nav-link"
-        if (l.active) { classes += " nav-active" }
-        return (
-            <li
-            className={classes}><a href={l.src} onClick={l.on_click}>{l.link}</a></li>
-        )})
-      
+      return (
+      <NavLink
+        src={l.src}
+        on_click={l.on_click}
+        is_active={l.is_active}
+        link={l.link}
+        />
+      )
+        })
+
     return (  
     <nav className="Nav">
      <ul className="nav-container">
@@ -34,5 +34,6 @@ class Nav extends React.Component{
   );
   }
 }
+
 
 export default Nav;

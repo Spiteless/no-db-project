@@ -43,7 +43,7 @@ class AppointmentSlot extends React.Component {
                     <button onClick={() => this.removeClientFromSlot(this.props.eventID, this.props.appSlotIndex)} className="event-remove-client">
                         {removeIcon}
                     </button>
-                    <button onClick={() => window.alert("edit")} className="event-edit-client">
+                    <button onClick={() => window.alert("edit!!!!!!!")} className="event-edit-client">
                         {editIcon}
                     </button>
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import AppointmentObject from './AppointmentObject.js';
-import FormNewAppointment from './FormNewEvent.js'
+import AppointmentForm from './AppointmentForm.js'
 
 /*
     users={this.state.users}
@@ -15,6 +15,8 @@ import FormNewAppointment from './FormNewEvent.js'
     newEvent_toggle = {this.state.newEvent_toggle}
 */
 
+
+
 function Appointment(props) {
     let {newEvent_toggle, toggleNewEvent, addEvent} = props
     
@@ -22,8 +24,9 @@ function Appointment(props) {
     const newEventForm = (
         <div className="event-box">
             <div className="event-container">
-                <FormNewAppointment
-                    toggleNewEvent={toggleNewEvent}
+                <AppointmentForm
+                    on_click_cancel={toggleNewEvent}
+                    on_click_submit={""}
                     addEvent={addEvent}
                 />
             </div>

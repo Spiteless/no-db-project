@@ -21,7 +21,7 @@ const emptyAppointment = {
                 ]
 }
 
-class FormNewEvent extends React.Component{
+class AppointmentForm extends React.Component{
   constructor(props){
     super(props)
     this.state = {
@@ -80,33 +80,4 @@ class FormNewEvent extends React.Component{
       )
   }
 }
-      
-
-// {
-//   "newEvent": {
-
-//           "id": 1,
-//           "business_name": "Bloopville",
-//           "address": "5 Lien Plaza",
-//           "event_date": "8/5/2020",
-//           "appointment_slots": [
-//               {
-//                   "client_id": 2,
-//                   "time": "10:00 am"
-//               },
-//               {
-//                   "client_id": 1,
-//                   "time": "10:15 am"
-//               },
-//               {
-//                   "client_id": 1,
-//                   "time": "10:30 am"
-//               },
-//               {
-//                   "client_id": 1,
-//                   "time": "10:45 am"
-//               }
-//           ]
-//       }
-//   }
-export default FormNewEvent;
+export default AppointmentForm;
