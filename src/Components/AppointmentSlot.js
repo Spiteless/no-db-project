@@ -14,7 +14,7 @@ class AppointmentSlot extends React.Component {
         this.state = {
             tools_add: (
                 <div className="tools">
-                    <button onClick={() => window.alert("add")} className="event-add-client">
+                    <button onClick={() => props.toggleEditUser(this.props.index)} className="event-add-client">
                         {addIcon}
                     </button>
                 </div>
