@@ -17,7 +17,6 @@ import UserForm from './UserForm.js'
 */
 
 
-
 function Appointment(props) {
     let {newEvent_toggle, toggleNewEvent, addEvent} = props
     
